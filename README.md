@@ -1,6 +1,14 @@
 # EvoFuzzy
 This is a very simple Python implementation of the [Differential Evolution Algorithm](http://www1.icsi.berkeley.edu/~storn/TR-95-012.pdf) for tuning Fuzzy Inference Systems.
 
+## Requirements
+Known dependencies:
+- Python (3.5.5)
+- Numpy (1.14.2)
+- Matplotlib (2.2.2)
+
+To install dependencies, `cd` to the directory of the repository and run `pip install -r requirements.txt`
+
 ## Code Structure
 
 - `anfis.py`: contains a python ANFIS implementation.
@@ -8,11 +16,7 @@ This is a very simple Python implementation of the [Differential Evolution Algor
 - `fobj.py`: contains several objective functions.
 - `mackey.py`: contains an example that uses Differential Evolution for tuning an ANFIS for the prediction of the Mackey Glass series. This example trains the system on 1500 points of the series and plots the real vs. predicted series.
 
-## Requirements
-Known dependencies:
-- Python (3.5.5)
-- Numpy (1.14.2)
-- Matplotlib (2.2.2)
+To run the example, `cd` to the directory of the repository and run `python mackey.py`
 
 ## TODO:
 - Implement membership functions other than Gaussians.
